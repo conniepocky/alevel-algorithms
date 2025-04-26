@@ -1,6 +1,8 @@
 l = [1, 4, 3, 9, 7, 2]
 
 def merge(left, right):
+    print("left", left)
+    print("right", right)
     final = []
     i = j = 0
 
@@ -27,4 +29,9 @@ def merge_sort(arr):
     left_half = merge_sort(arr[:mid])
     right_half = merge_sort(arr[mid:])
 
+    print("left_half", left_half)
+    print("right_half", right_half)
+
     return merge(left_half, right_half)
+
+print(merge_sort(l))
