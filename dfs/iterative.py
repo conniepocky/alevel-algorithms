@@ -15,7 +15,7 @@ def dfs_iterative(graph, start):
         node = stack.pop()
         if node not in visited:
             visited.add(node)
-            stack.extend(reversed(graph[node]))
+            stack.extend(reversed(graph[node])) 
     
     return visited
 
